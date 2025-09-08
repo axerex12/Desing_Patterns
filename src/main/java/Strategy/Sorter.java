@@ -7,12 +7,11 @@ public class Sorter {
 
         ArrayGenerator generator = new ArrayGenerator();
         int[] array30Bubble = generator.generateArray(30);
-        int[] arrayBogo = generator.generateArray(5);
         int[] array30Selection = generator.generateArray(30);
         int[] array100kSel = generator.generateArray(100000);
         int[] array100kBub = generator.generateArray(100000);
+        int[] arrayBogo = generator.generateArray(5);
 
-        int[] array100k = generator.generateArray(100000);
 
         SortContext context = new SortContext(new BubbleSort());
         long startTime = System.nanoTime();
