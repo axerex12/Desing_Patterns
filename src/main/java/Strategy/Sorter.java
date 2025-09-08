@@ -1,7 +1,5 @@
 package main.java.Strategy;
 
-import java.lang.reflect.Array;
-
 public class Sorter {
     public static void main(String[] args) {
 
