@@ -10,7 +10,7 @@ public class Main {
 
         Directory subDir = new Directory("projects");
         File file4 = new File("code.java", 1);
-        File file5 = new File("notes.txt", 3);
+        File file5 = new File("muistiinpanot.txt", 3);
 
         root.addElement(file1);
         root.addElement(file2);
@@ -27,7 +27,7 @@ public class Main {
         root.accept(searchVisitor);
         System.out.println("Found .txt files:");
         for (File f : searchVisitor.getFoundFiles()) {
-            System.out.println(" - " + f);
+            System.out.println(" - " + f.getName());
         }
     }
 }
