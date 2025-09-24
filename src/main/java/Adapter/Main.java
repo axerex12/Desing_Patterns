@@ -7,7 +7,7 @@ public class Main {
         date.setMonth(4);
         date.setYear(1945);
         System.out.println("Starting date: " + date.getDay() + "/" + (date.getMonth() + 1) + "/" + date.getYear());
-        date.advanceDays(10);
+        date.advanceDays(3000);
         System.out.println("Date after advancing: " + date.getDay() + "/" + (date.getMonth() + 1) + "/" + date.getYear());
     }
     
