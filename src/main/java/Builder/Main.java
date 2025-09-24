@@ -11,8 +11,7 @@ public class Main {
 
         ComputerBuilder officeComputerBuilder = new OfficePcBuilder();
         director = new ComputerDirector(officeComputerBuilder);
-        director.buildOfficePc(officeComputerBuilder);
-        Computer officeComputer = officeComputerBuilder.build();
+        Computer officeComputer = director.buildOfficePc(officeComputerBuilder);
         System.out.println(officeComputer.toString());
 
 

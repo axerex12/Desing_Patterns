@@ -5,20 +5,22 @@ public class ComputerDirector {
     public ComputerDirector(ComputerBuilder builder) {
     }
 
-    public void buildGamingPc(ComputerBuilder gamingBuilder) {
-        gamingBuilder.buildProcessor();
-        gamingBuilder.buildRam();
-        gamingBuilder.buildHardDrive();
-        gamingBuilder.buildGpu();
-        gamingBuilder.buildOS();
+    public Computer buildGamingPc(ComputerBuilder builder) {
+        builder.buildProcessor();
+        builder.buildRam();
+        builder.buildHardDrive();
+        builder.buildGpu();
+        builder.buildOS();
+        return builder.build();
     }
 
-    public void buildOfficePc(ComputerBuilder officeBuilder) {
-        officeBuilder.buildProcessor();
-        officeBuilder.buildRam();
-        officeBuilder.buildHardDrive();
-        officeBuilder.buildGpu();
-        officeBuilder.buildOS();
+    public Computer buildOfficePc(ComputerBuilder builder) {
+        builder.buildProcessor();
+        builder.buildRam();
+        builder.buildHardDrive();
+        builder.buildGpu();
+        builder.buildOS();
+        return builder.build();
     }
     
 }
